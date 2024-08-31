@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supercars</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            overflow-x: hidden;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px;
+            background-color: rgba(0, 0, 0, 0.7);
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .car-card {
+            width: 300px;
+            margin: 20px;
+            perspective: 1000px;
+            animation: scaleUp 2s ease-in-out;
+        }
+
+        .car-card img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.5s ease;
+        }
+
+        .car-card:hover img {
+            transform: rotateY(20deg);
+        }
+
+        .car-card p {
+            font-size: 1em;
+            margin: 10px 0;
+        }
+
+        .car-card a {
+            color: #ff0;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .car-card a:hover {
+            color: #f00;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes scaleUp {
+            from { transform: scale(0.9); }
+            to { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Supercars Showcase</h1>
+        <p>Explore the beauty and power of the world's most incredible supercars!</p>
+    </div>
+
+    <div class="content">
+        <div class="car-card">
+            <img src="c:\Users\onkar.dubey_jindalst\Pictures\Screenshots\Screenshot 2024-08-31 140202.png" alt="Ferrari">
+            <p>The Ferrari LaFerrari combines speed and elegance with its hybrid V12 engine.</p>
+            <a href="https://www.ferrari.com/models/laferrari" target="_blank">Learn More</a>
+        </div>
+
+        <div class="car-card">
+            <img src="c:\Users\onkar.dubey_jindalst\Pictures\Screenshots\Screenshot 2024-08-31 140317.png" alt="Bugatti">
+            <p>The Bugatti Chiron offers unrivaled luxury and performance with a quad-turbocharged W16 engine.</p>
+            <a href="https://www.bugatti.com/chiron/" target="_blank">Learn More</a>
+        </div>
+
+        <div class="car-card">
+            <img src="c:\Users\onkar.dubey_jindalst\Pictures\Screenshots\Screenshot 2024-08-31 140429.png" alt="Lamborghini">
+            <p>The Lamborghini Aventador features an aggressive design and a naturally aspirated V12 engine.</p>
+            <a href="https://www.lamborghini.com/en/models Aventador" target="_blank">Learn More</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Supercar Enthusiasts</p>
+    </div>
+</body>
+</html>
